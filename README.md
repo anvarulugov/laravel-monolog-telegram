@@ -53,7 +53,7 @@ return [
         'telegram' => [
             'driver' => 'monolog',
             'level' => 'debug',
-            'handler' => TheCoder\MonologTelegram\TelegramBotHandler::class,
+            'handler' => Ulugov\MonologTelegram\TelegramBotHandler::class,
             'handler_with' => [
                 'token' => env('LOG_TELEGRAM_BOT_TOKEN'),
                 'chat_id' => env('LOG_TELEGRAM_CHAT_ID'),
@@ -70,7 +70,7 @@ return [
                     LowPriorityAttribute::class => env('LOG_TELEGRAM_LOWPRIORITY_ATTRIBUTE_TOPIC_ID', null),
                 ]
             ],
-            'formatter' => TheCoder\MonologTelegram\TelegramFormatter::class,
+            'formatter' => Ulugov\MonologTelegram\TelegramFormatter::class,
             'formatter_with' => [
                 'tags' => env('LOG_TELEGRAM_TAGS', null),
             ],
