@@ -54,7 +54,11 @@ class TopicDetector
             return null;
         }
 
-        [$controller, $method] = explode('@', $route->getAction()['controller']);
+        if (str_contains($route->getAction()['controller'], '@')) {
+          [$controller, $method] = explode('@', $route->getAction()['controller']);
+        } else {
+          [$controller, $method] = array_slice(explode('\\', $route->getAction()['controller']), 2, 2);
+        }
 
         $topicId = $this->getTopicIdByReflection($controller, $method);
         if ($topicId === false) {
