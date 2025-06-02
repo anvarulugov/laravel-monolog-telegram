@@ -1,6 +1,6 @@
 <?php
 
-namespace TheCoder\MonologTelegram;
+namespace Ulugov\MonologTelegram;
 
 use GuzzleHttp\Exception\GuzzleException;
 use Monolog\Handler\AbstractProcessingHandler;

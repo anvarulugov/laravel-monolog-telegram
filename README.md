@@ -20,7 +20,7 @@ Logging should be more than just saving data — it should **drive action**. Her
 Install via Composer:
 
 ```sh
-composer require thecoder/laravel-monolog-telegram
+composer require anvarulugov/laravel-monolog-telegram
 ```
 
 ## ⚙️ Usage
@@ -36,12 +36,12 @@ If a queue name is set, logs will be processed asynchronously in the specified q
 Modify your `config/logging.php` file:
 
 ```php
-use TheCoder\MonologTelegram\Attributes\EmergencyAttribute;
-use TheCoder\MonologTelegram\Attributes\CriticalAttribute;
-use TheCoder\MonologTelegram\Attributes\ImportantAttribute;
-use TheCoder\MonologTelegram\Attributes\DebugAttribute;
-use TheCoder\MonologTelegram\Attributes\InformationAttribute;
-use TheCoder\MonologTelegram\Attributes\LowPriorityAttribute;
+use Ulugov\MonologTelegram\Attributes\EmergencyAttribute;
+use Ulugov\MonologTelegram\Attributes\CriticalAttribute;
+use Ulugov\MonologTelegram\Attributes\ImportantAttribute;
+use Ulugov\MonologTelegram\Attributes\DebugAttribute;
+use Ulugov\MonologTelegram\Attributes\InformationAttribute;
+use Ulugov\MonologTelegram\Attributes\LowPriorityAttribute;
 
 return [
     'channels' => [
@@ -92,7 +92,7 @@ namespace App\Http\Controllers\NewWeb;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use TheCoder\MonologTelegram\Attributes\EmergencyAttribute;
+use Ulugov\MonologTelegram\Attributes\EmergencyAttribute;
 
 class HomeController extends Controller
 {
@@ -112,7 +112,7 @@ namespace App\Jobs;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldBeQueued;
 use Illuminate\Foundation\Bus\Dispatchable;
-use TheCoder\MonologTelegram\Attributes\CriticalAttribute;
+use Ulugov\MonologTelegram\Attributes\CriticalAttribute;
 
 class ProcessData implements ShouldBeQueued
 {

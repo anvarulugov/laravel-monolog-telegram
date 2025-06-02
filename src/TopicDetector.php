@@ -1,9 +1,9 @@
 <?php
 
-namespace TheCoder\MonologTelegram;
+namespace Ulugov\MonologTelegram;
 
 use ReflectionMethod;
-use TheCoder\MonologTelegram\Attributes\TopicLogInterface;
+use Ulugov\MonologTelegram\Attributes\TopicLogInterface;
 use GuzzleHttp\Exception\GuzzleException;
 use Illuminate\Support\Facades\Route;
 

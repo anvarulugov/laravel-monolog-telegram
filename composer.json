@@ -1,5 +1,5 @@
 {
-  "name": "thecoder/laravel-monolog-telegram",
+  "name": "anvarulugov/laravel-monolog-telegram",
   "description": "Telegram Handler for Monolog",
   "keywords": [
     "log",
@@ -16,6 +16,11 @@
   "type": "library",
   "authors": [
     {
+      "name": "Anvar Ulugov",
+      "email": "ulugov.anvar@gmail.com",
+      "role": "Developer"
+    },
+    {
       "name": "Mahdi Bagheri",
       "email": "thecoder.ir@gmail.com",
       "role": "Developer"
@@ -23,7 +28,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "TheCoder\\MonologTelegram\\": "src"
+      "Ulugov\\MonologTelegram\\": "src"
     }
   },
   "require": {

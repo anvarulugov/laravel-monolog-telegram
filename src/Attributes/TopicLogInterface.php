@@ -1,6 +1,6 @@
 <?php
 
-namespace TheCoder\MonologTelegram\Attributes;
+namespace Ulugov\MonologTelegram\Attributes;
 
 interface TopicLogInterface
 {

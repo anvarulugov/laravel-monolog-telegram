@@ -1,6 +1,6 @@
 <?php
 
-namespace TheCoder\MonologTelegram;
+namespace Ulugov\MonologTelegram;
 
 use GuzzleHttp\Client;
 use Illuminate\Bus\Queueable;
